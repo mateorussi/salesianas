@@ -8,6 +8,7 @@ public class pruebagit {
 		System.out.println("Esto es una prueba de git");
 		
 		System.out.println("Esto es una prueba de git");
+		String mateo;
 	}
 
 }
