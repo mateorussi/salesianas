@@ -111,5 +111,34 @@ public class Empleado {
 	
 	// Método para calcular el pago de las horas extras
 	
+	public void calculoHorasExtra() {
+		System.out.println("El pago por las horas extras mensuales es de "+(horas_extras*pago_he)+"€");
+	}
+	public void sueldoBruto() {
+		System.out.println("El sueldo bruto es de "+((horas_extras*pago_he)+sueldo)+"€");
+		sueldo_bruto=((horas_extras*pago_he)+sueldo);
+	}
+	public void calculoIRPF() {
+		if(casado=true) {
+		System.out.println("Se le quitaría un total de "+sueldo_bruto*(((irpf/100)*2)*hijos)+"€ por el IRPF");
+		sueldo_neto=(sueldo_bruto-(sueldo_bruto*(((irpf/100)*2)*hijos)));
+		}else {
+			System.out.println("Se le quitaría un total de "+sueldo_bruto*((irpf/100)*hijos)+"€ por el IRPF");
+			sueldo_neto=(sueldo_bruto-(sueldo_bruto*((irpf/100)*hijos)));
+		}
+	
+	}
+	public void println() {
+		System.out.println("DNI: "+dni+" Casad@: "+casado+" Número de hijos: "+hijos);
+	}
+	public void printAll() {
+		if(casado=true) {
+		System.out.println("DNI: "+dni+" Casad@: "+casado+" Número de hijos: "+hijos);
+		System.out.println("Sueldo base: "+sueldo+" Sueldo bruto: "+sueldo_bruto+" Sueldo neto (IRPF): "+sueldo_bruto+" pago por horas extra: "+(horas_extras*pago_he)+" retención por IRPF: "+sueldo_bruto*(((irpf/100)*2)*hijos));
+		}else {
+			System.out.println("DNI: "+dni+" Casad@: "+casado+" Número de hijos: "+hijos);
+			System.out.println("Sueldo base: "+sueldo+" Sueldo bruto: "+sueldo_bruto+" Sueldo neto (IRPF): "+sueldo_bruto+" pago por horas extra: "+(horas_extras*pago_he)+" retención por IRPF: "+sueldo_bruto*((irpf/100)*hijos));
+		}
+	}
 	
 }
