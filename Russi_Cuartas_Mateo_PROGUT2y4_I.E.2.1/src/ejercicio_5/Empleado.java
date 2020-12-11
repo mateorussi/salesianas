@@ -4,13 +4,24 @@
 package ejercicio_5;
 
 /**
+ * Esta clase modela la información que una 
+ * empresa mantiene sobre cada empleado
+ * 
  * @author mateorussi
- *
+ * @version 26/nov/2020
  */
 public class Empleado {
 
 	/*
-	 * Atributos
+	 * @param dni
+	 * @param sueldo_bruto
+	 * @param sueldo_neto
+	 * @param sueldo
+	 * @param horas_extras
+	 * @param pago_he
+	 * @param irpf
+	 * @param casado 
+	 * @param hijos
 	 */
 	
 	private long dni;

@@ -4,13 +4,17 @@
 package ejercicio_1;
 
 /**
+ * Esta clase representa una película en DVD de nombre DVDCine con
+ * los atributos necesarios para mostrar la ficha que se recoge en el String 
+ * muestraDVDCine
+ * 
  * @author mateorussi
- *
+ * @version 26/nov/2020
  */
 public class DVDCine {
 	
 	/*
-	 * Atributos
+	 * Atributos 
 	 */
 	
 	private String nombre;
@@ -21,6 +25,12 @@ public class DVDCine {
     
     /*
      * Constructores
+     * 
+     * @param nombre
+	 * @param autor
+	 * @param resumen
+	 * @param genero
+	 * @param duracion
      */
 
     public DVDCine(String nombre, String autor, String resumen, String genero, int duracion) {
@@ -33,9 +43,9 @@ public class DVDCine {
     }
     
     /*
-     * Retorna True si escribes Thriller 
+     * @return True si escribes Thriller 
      * en el genero
-     * @return
+     * 
      */
     
     public boolean es_thriller() {
@@ -47,9 +57,7 @@ public class DVDCine {
     }
     
     /*
-     * Si escribes algo en el resumen te 
-     * retornara true
-     * @return
+     * @return True Si escribes algo en el resumen
      */
     
     public boolean tiene_resumen() {
@@ -57,10 +65,7 @@ public class DVDCine {
     }
     
     /*
-     * Mostrara la duración de la 
-     * pelicula
-     * @return
-     * 
+     * @return duración de la pelicula
      */
     
     public int muestra_duracion() {
@@ -68,9 +73,8 @@ public class DVDCine {
     }
 
     /*
-     * Devuelve toda la infomación
+     * @return toda la infomación
      * acerca de la película
-     * @return
      */
     
     public String muestraDVDCine() {
