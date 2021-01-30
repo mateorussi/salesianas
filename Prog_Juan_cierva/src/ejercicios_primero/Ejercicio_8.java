@@ -15,6 +15,10 @@ public class Ejercicio_8 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		System.out.println("todo va bien con el git??");
+
+
+
 		
 	}
 
