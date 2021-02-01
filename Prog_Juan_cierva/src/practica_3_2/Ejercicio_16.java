@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ejercicios_primero;
+package practica_3_2;
 
 /**
  * @author mateorussi

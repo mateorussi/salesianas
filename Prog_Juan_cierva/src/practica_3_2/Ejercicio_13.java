@@ -3,7 +3,7 @@
  * y un entero positivo (exponente), saque por pantalla el 
  * resultado de la potencia. No se puede utilizar el operador de potencia.
  */
-package ejercicios_primero;
+package practica_3_2;
 
 import java.util.Scanner;
 
