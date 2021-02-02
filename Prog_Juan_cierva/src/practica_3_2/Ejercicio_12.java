@@ -1,5 +1,11 @@
 /**
- * 
+ * Escribe un programa que pida el limite inferior y superior de un intervalo.
+ * Si el límite inferior es mayor que el superior lo tiene que volver a pedir.
+ * A continuación se van introduciendo números hasta que introduzcamos el 0.
+ * Cuando termine el programa dará las siguientes informaciones:
+ * La suma de los números que están dentro del intervalo (intervalo abierto).
+ * Cuantos números están fuera del intervalo.
+ * He informa si hemos introducido algún número igual a los límites del intervalo.
  */
 package practica_3_2;
 
@@ -45,11 +51,11 @@ public class Ejercicio_12 {
 				
 			}
 			//Contador de números que están fuera del intervalo
-			if (num_ing < lim_inf || num_ing > lim_sup){
+			else (num_ing < lim_inf && num_ing != 0 || num_ing > lim_sup){
 				cont_fuera++;
 			}
 			//Contador de números iguales a los límites del intervalo
-			if (num_ing == lim_inf || num_ing == lim_sup){
+			else (num_ing == lim_inf || num_ing == lim_sup){
 				cont_igual++;
 			}
 		
