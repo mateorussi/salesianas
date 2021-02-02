@@ -24,7 +24,7 @@ public class Ejercicio_14 {
 					"/n2. Segunda opción" +
 					"/n3. Tercera opción" +
 					"/n4. Cuarta opción" +
-					"/n5. Elija para salir del programa ")
+					"/n5. Elija para salir del programa ");
 			int opc= Integer.parseInt(System.console().readLine());
 
 			switch (opc){
@@ -41,7 +41,7 @@ public class Ejercicio_14 {
 					System.out.println("Esta es la cuarta opción");
 					break;
 				case 5:
-					System.out.println("Has salido del programa)";
+					System.out.println("Has salido del programa");
 
 			}
 		}while (opc!=5);
