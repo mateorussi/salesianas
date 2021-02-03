@@ -1,7 +1,7 @@
 /*
- * Escribir un programa que lea un año indicar si es bisiesto.
- * Nota: un año es bisiesto si es un número divisible por 4, 
- * pero no si es divisible por 100, excepto que también sea divisible por 400.
+ * Escribir un programa que lea un aï¿½o indicar si es bisiesto.
+ * Nota: un aï¿½o es bisiesto si es un nï¿½mero divisible por 4, 
+ * pero no si es divisible por 100, excepto que tambiï¿½n sea divisible por 400.
  */
 package practica_3_3;
 
@@ -21,9 +21,10 @@ public class Ejercicio_2 {
 
 		int anio;
 		
-		System.out.println("Ingrese un año a evaluar");
+		System.out.println("Ingrese un aï¿½o a evaluar");
 		Scanner sc=new Scanner(System.in);
 		anio=sc.nextInt();
+		
 		
 		
 	}

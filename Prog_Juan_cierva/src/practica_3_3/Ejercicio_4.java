@@ -1,17 +1,19 @@
 /**
- * El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto
-debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio.
+ * El director de una escuela estï¿½ organizando un viaje de estudios, y requiere determinar cuï¿½nto
+debe cobrar a cada alumno y cuï¿½nto debe pagar a la compaï¿½ï¿½a de viajes por el servicio.
 La forma de cobrar es la siguiente:
-• si son 100 alumnos o más, el costo del viaje por cada alumno es de 65 euros;
-• de 50 a 99 alumnos, el costo es de 70 euros,
-• de 30 a 49, de 95 euros,
-• y si son menos de 30.
-• Además, el costo de un autobús es de 4000 euros, sin importar el número de alumnos.
-LA capacidad de un autobús es de 60 plazas.
+ï¿½ si son 100 alumnos o mï¿½s, el costo del viaje por cada alumno es de 65 euros;
+ï¿½ de 50 a 99 alumnos, el costo es de 70 euros,
+ï¿½ de 30 a 49, de 95 euros,
+ï¿½ y si son menos de 30 no hay viaje.
+ï¿½ Ademï¿½s, el costo de un autobï¿½s es de 4000 euros, sin importar el nï¿½mero de alumnos.
+LA capacidad de un autobï¿½s es de 60 plazas.
 Realice un algoritmo que permita determinar el pago a la agencia de viajes y lo que debe
 pagar cada alumno por el viaje.
  */
 package practica_3_3;
+
+import java.util.Scanner;
 
 /**
  * @author bm10DAM1
@@ -25,6 +27,29 @@ public class Ejercicio_4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		int alumno = 0;
+		int costo_alum = 0;
+		int alummo = 0;
+		int costofinal;
+		
+		System.out.println("Ingrese el nÃºmero de alumnos que realizaran el viaje");
+		Scanner sc=new Scanner(System.in);
+		alumno=sc.nextInt();
+		
+		if (alumno>=100) {
+			costo_alum = 65;
+			costofinal=costo_alum*alumno+4000;
+		}else if (alumno>=50 && alumno<=99) {
+			costo_alum = 70;
+			costofinal=costo_alum*alumno+4000;
+		}else if (alumno>=30 && alumno<=49) {
+			costo_alum = 95;
+			costofinal=costo_alum*alumno+4000;
+		}else if (alumno<30) {
+			System.out.println("La cantidad de viajeros es mÃ¡s baja del minimo, no puede hacer el viaje");
+		}
+		
+		//Aqui hay un bucle for//
 	}
 
 }
