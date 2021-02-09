@@ -1,13 +1,13 @@
 /**
  * Practica el uso de constantes.
- * Queremos calcular la longitud de una circunferencia, el área de un círculo
- * y volumen de una esfera, a partir del radio que se introducirá por teclado.
+ * Queremos calcular la longitud de una circunferencia, el ï¿½rea de un cï¿½rculo
+ * y volumen de una esfera, a partir del radio que se introducirï¿½ por teclado.
  * Define PI como constante y prueba durante el programa a cambiar su
  * valor.
- * Después de ejecutarse el proceso anterior, pregunta al usuario si quiere
- * continuar con otro caso (S/N). El programa terminará cuando el usuario
+ * Despuï¿½s de ejecutarse el proceso anterior, pregunta al usuario si quiere
+ * continuar con otro caso (S/N). El programa terminarï¿½ cuando el usuario
  * responda N.
- * Fórmulas:
+ * Fï¿½rmulas:
  * L = 2 . n . r A = 4. n .r2 V = - n . r 3
  */
 package practica_3_4;
@@ -27,7 +27,33 @@ public class Ejercicio_2 {
 		// TODO Auto-generated method stub
 
 		double long_conf, area_circ, volumen_esf,radio;
-		Scanner sc=new Scanner(System.in);
+		
+		boolean rta=true;
+		
+		do {
+			//Pedir radio
+			System.out.println("Introduzca el radio de la circunferencia");
+			Scanner sc=new Scanner(System.in);
+			radio=sc.nextDouble();
+		
+			//Longitud de una circunferencia
+			float long_conf
+			//Area del circulo
+			
+			//Volumen de una esfera
+			
+			//
+			
+			System.out.println("Â¿Quieres continuar con otro caso (S/N)?");
+			String rta_user=sc.next();
+			if (rta_user=="S") {
+				rta=false;
+			}
+		}while(rta=true);
+		
+		
+		
+		
 		
 	}
 

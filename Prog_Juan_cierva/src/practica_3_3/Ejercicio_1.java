@@ -1,8 +1,10 @@
 /*
- * Capturamos un carácter y debemos indicar si está en mayúscula,
- * en minúscula, es un dígito o cualquier otro carácter.
+ * Capturamos un carï¿½cter y debemos indicar si estï¿½ en mayï¿½scula,
+ * en minï¿½scula, es un dï¿½gito o cualquier otro carï¿½cter.
  */
 package practica_3_3;
+
+import java.util.Scanner;
 
 /**
  * @author bm10DAM1
@@ -16,25 +18,22 @@ public class Ejercicio_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Escribe un cáracter cualquiera");
-		
 		char caracter;
-		caracter=scan.next().nextAt(0);
 		
-		if (Character.isDigit(caracter)) { //identificar si es un digito
-			System.out.println("El caracter es un dígito");
-		}else if (Character.isLetter(caracter)) {
-			if (Character.isUpperCase(caracter)) { //identificar si es mayuscula
-				System.out.println("Es una Letra mayúscula");
-			}else if(Character.isLowerCase(caracter)){ //identicar si es minuscula
-				System.out.println("Es una Letra minúscula");
-			}
-		}
+		System.out.println("Escribe cualquier caracter");
 		
+		Scanner sc=new Scanner(System.in);
+		caracter=sc.next().charAt(0);
 		
-		
-		
-				
+		if (caracter>=97 && caracter<=122) {
+			System.out.println("Es una minuscula");
+		}else if (caracter>=65 && caracter<=90) {
+			System.out.println("Es una mayuscula");
+		}else if (caracter>=48 && caracter<=57) {
+			System.out.println("Es un digito");
+		}else {
+			System.out.println("Es otro caracter");
+		}	
 	}
 
 }
