@@ -1,10 +1,11 @@
+import javax.swing.JOptionPane;
+
 /**
  * Realizar un programa Java que cargue un vector con las notas de los 40
- * alumnos de una clase y visualice el número de alumnos aprobados, el
- * número de alumnos suspensos y la nota media de la clase, y el número de
+ * alumnos de una clase y visualice el nï¿½mero de alumnos aprobados, el
+ * nï¿½mero de alumnos suspensos y la nota media de la clase, y el nï¿½mero de
  * calificaciones superiores a la media.
  */
-_1;
 
 /**
  * @author mateorussi
@@ -18,6 +19,12 @@ public class Ejercicio_6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		int [] alumnos=new int[40];
+		
+		int i;
+		for (i=1;i<40;i++) {
+			JOptionPane.showInputDialog(null, "Ingrese nota");
+		}
 	}
 
 }
