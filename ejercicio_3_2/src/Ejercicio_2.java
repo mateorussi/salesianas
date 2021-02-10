@@ -4,7 +4,7 @@
  * Además, queremos que se muestre al final del programa
  * la NOTA MEDIA DEL GRUPO. Hazlo para nÃºmeros reales.
  */
-package practica_3_2;
+
 
 /**
  * @author mateorussi
