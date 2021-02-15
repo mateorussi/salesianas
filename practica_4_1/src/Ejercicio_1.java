@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+import javax.swing.*;
 
 /**
  * Realizar programa Java que permita cargar un vector numerico de 10 elementos
@@ -18,7 +19,8 @@ public class Ejercicio_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		JOptionPane.showEjercicio_1(null, "");
+		String vector = JOptionPane.showInputDialog(null,"Ingrese un numero");
+		
 		
 		int [] sc=new sc[10];
 		
