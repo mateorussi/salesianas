@@ -19,7 +19,13 @@ public class Ejercicio_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String vector = JOptionPane.showInputDialog(null,"Ingrese un numero");
+		int[] vector = new int[10];
+		
+		for (int i=0;i<vector.length;i++) {
+			int peticion = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+			vector[i]=Integer.toString(peticion);
+		}
+		
 		
 		
 		int [] sc=new sc[10];

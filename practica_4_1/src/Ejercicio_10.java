@@ -1,8 +1,9 @@
+import java.util.Scanner;
+
 /**
- * Realizar un programa Java que pida un número entero positivo de 10 cifras,
- * y que compruebe si el número es capicúa
+ * Realizar un programa Java que pida un nï¿½mero entero positivo de 10 cifras,
+ * y que compruebe si el nï¿½mero es capicua
  */
-_1;
 
 /**
  * @author mateorussi
@@ -16,6 +17,15 @@ public class Ejercicio_10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Scanner sc=new Scanner(System.in);
+		
+		int num10;
+		do {
+			System.out.println("Ingrese un numero entero positivo de 10 cifras");
+			num10=sc.nextInt();
+		}while(num10<1000000000);
+		
+		
 	}
 
 }
