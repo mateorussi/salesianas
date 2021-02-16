@@ -20,28 +20,30 @@ public class Ejercicio_10 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		int num_azar = (int)(Math.random()*100+1);
+		int num_azar = (int) (Math.random() * 100 + 1);
 		int num_intro;
-		
+
 		System.out.println("Ingresa un número");
-		
+
+		identificarNumero(num_azar);
+
+		System.out.println("CORRECTO! has adivinado mi número, era el " + num_azar);
+	}
+
+	private static void identificarNumero(int num_azar) {
+		int num_intro;
 		do {
-			Scanner sc=new Scanner(System.in);
-			num_intro=sc.nextInt();
-			
-			
-			if (num_intro > num_azar){
+			Scanner sc = new Scanner(System.in);
+			num_intro = sc.nextInt();
+
+			if (num_intro > num_azar) {
 				System.out.println("El número es menor");
-			} 
-			
+			}
 			if (num_intro < num_azar) {
 				System.out.println("El número es mayor");
 			}
-			
-		}while(num_intro!=num_azar);
-		
-		System.out.println("CORRECTO! has adivinado mi número, era el "+num_azar);
+
+		} while (num_intro != num_azar);
 	}
 
 }
