@@ -22,22 +22,26 @@ public class Ejercicio_1 {
 		int[] vector = new int[10];
 		
 		for (int i=0;i<vector.length;i++) {
-			int peticion = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
-			vector[i]=Integer.toString(peticion);
-		}
-		
-		
-		
-		int [] sc=new sc[10];
-		
-		int i;
-		
-		for (i=0,i<10,i++) {
 			
-			System.out.println(sc);
+			vector[i]=Integer.parseInt(JOptionPane.showInputDialog("Introduzca un valor para el elemento "+i));
 		}
 		
-	
+		int mayor=vector[0];
+		//Determinar mayor
+		for (int x=1;x<vector.length;x++) {
+			if(vector[x]>mayor) {
+				mayor=vector[x];
+			}
+		}
+		//Determinar repeticiones del mayor
+		int cont=0;
+		for (int j=0;j<vector.length;j++) {
+			if (vector[j]==mayor) {
+				cont++;
+			}
+		}
+		JOptionPane.showMessageDialog(null, "El valor del elemento mayor es "+mayor+" y se repitio "+cont+" veces");
+
 	}
 
 }

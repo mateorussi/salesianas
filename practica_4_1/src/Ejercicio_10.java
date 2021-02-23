@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /**
- * Realizar un programa Java que pida un n�mero entero positivo de 10 cifras,
- * y que compruebe si el n�mero es capicua
+ * Realizar un programa Java que pida un numero entero positivo de 10 cifras,
+ * y que compruebe si el numero es capicua
  */
 
 /**
@@ -24,6 +24,7 @@ public class Ejercicio_10 {
 			System.out.println("Ingrese un numero entero positivo de 10 cifras");
 			num10=sc.nextInt();
 		}while(num10<1000000000);
+		
 		
 		
 	}
