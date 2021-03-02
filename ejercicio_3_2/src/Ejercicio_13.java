@@ -1,9 +1,8 @@
 /**
- * Escribe un programa que dados dos números, uno real (base) 
+ * Escribe un programa que dados dos numeros, uno real (base) 
  * y un entero positivo (exponente), saque por pantalla el 
  * resultado de la potencia. No se puede utilizar el operador de potencia.
  */
-;
 
 import java.util.Scanner;
 
@@ -27,15 +26,14 @@ public class Ejercicio_13 {
 		base=sc.nextFloat();
 		
 		System.out.println("Ingrese el exponente");
-		Scanner sc1=new Scanner(System.in);
-		exponente=sc1.nextInt();
+		exponente=sc.nextInt();
 		
-		
-		
-		
-		
-
-		
+		int resPot = 0;
+		for(int i=0;i<exponente;i++) {
+			resPot= (int) (base*base);
+		}
+	
+		System.out.println("La potencia es "+resPot);
 	}
 
 }

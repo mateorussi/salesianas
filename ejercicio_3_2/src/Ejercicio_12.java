@@ -1,13 +1,13 @@
 /**
  * Escribe un programa que pida el limite inferior y superior de un intervalo.
- * Si el lÌmite inferior es mayor que el superior lo tiene que volver a pedir.
- * A continuaciÛn se van introduciendo n˙meros hasta que introduzcamos el 0.
- * Cuando termine el programa dar· las siguientes informaciones:
- * La suma de los n˙meros que est·n dentro del intervalo (intervalo abierto).
- * Cuantos n˙meros est·n fuera del intervalo.
- * He informa si hemos introducido alg˙n n˙mero igual a los lÌmites del intervalo.
+ * Si el limite inferior es mayor que el superior lo tiene que volver a pedir.
+ * A continuacion se van introduciendo numeros hasta que introduzcamos el 0.
+ * Cuando termine el programa dara las siguientes informaciones:
+ * 
+ * - La suma de los numeros que estan dentro del intervalo (intervalo abierto).
+ * - Cuantos numeros estan fuera del intervalo.
+ * - He informa si hemos introducido algun numero igual a los limites del intervalo.
  */
-actica_3_2;
 
 import java.util.Scanner;
 
@@ -45,17 +45,11 @@ public class Ejercicio_12 {
 			Scanner sc2=new Scanner(System.in);
 			num_ing=sc2.nextInt();
 			
-			//Suma de los n√∫meros que est√°n dentro del intervalo
 			if (num_ing > lim_inf && num_ing < lim_sup){
 				sum_dentro=num_ing+sum_dentro;
-				
-			}
-			//Contador de n√∫meros que est√°n fuera del intervalo
-			else (num_ing < lim_inf && num_ing != 0 || num_ing > lim_sup){
+			}else if (num_ing < lim_inf && num_ing != 0 || num_ing > lim_sup){
 				cont_fuera++;
-			}
-			//Contador de n√∫meros iguales a los l√≠mites del intervalo
-			else (num_ing == lim_inf || num_ing == lim_sup){
+			}else if(num_ing == lim_inf || num_ing == lim_sup){
 				cont_igual++;
 			}
 		

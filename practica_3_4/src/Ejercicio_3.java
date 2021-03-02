@@ -1,6 +1,6 @@
 /**
- * Declara dos variables del tipo byte. Captura valores para dichos n?meros
- * comprobando que valores m?ximos y m?nimos son posibles.
+ * Declara dos variables del tipo byte. Captura valores para dichos numeros
+ * comprobando que valores maximos y minimos son posibles.
  */
 
 

@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 /*
- * Capturamos un car�cter y debemos indicar si est� en may�scula,
- * en min�scula, es un d�gito o cualquier otro car�ractica_3_3;
+ * Capturamos un caracter y debemos indicar si est� en may�scula,
+ * en min�scula, es un digito o cualquier otro car�ractica_3_3;
 
 import java.util.Scanner;
 

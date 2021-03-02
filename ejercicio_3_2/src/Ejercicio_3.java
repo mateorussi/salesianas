@@ -1,6 +1,6 @@
 /**
- * Captura por teclado un número y queremos que
- * nos pregunte la tabla de multiplicar de dicho número.
+ * Captura por teclado un numero y queremos que
+ * nos pregunte la tabla de multiplicar de dicho numero.
  * Nosotros responderemos y el programa indicara si es
  * correcto o no, lo que hemos escrito.
  */
@@ -24,12 +24,17 @@ public class Ejercicio_3 {
 		int num=sc.nextInt();
 		
 		System.out.println("Â¿CuÃ¡l es la tabla de multiplicar de "+num);
-		
-		switch (num) {
-			case 1: System.out.println("1 x "+num+"="
-					+ "\n2 x "+num+"="
-							+ "\n3 x "+num+"="
-									+ "");
+		switch(num) {
+			case 1: 
+				if (num==1){
+					int res1=num*1;
+					}
+			break;
+				}
+			
+		for(int i=0;i<11;i++) {
+			System.out.print(num+" x "+i+" = ");
+			int res=sc.nextInt();
 		}
 		
 	}

@@ -35,33 +35,33 @@ public class Ejercicio_1 {
 				+ "\n3. *"
 				+ "\n4. /"
 				+ "\n5. (MOD)"
-				+ "\n6. Divisi�n entera ");
+				+ "\n6. Division entera ");
 		int opr3=sc.nextInt();
 		switch (opr3)
 		{
 			case 1: 
 				double resultado1=(opr1+opr2);
-				System.out.println("La operaci�n realizada es la suma y el resultado es "+resultado1);
+				System.out.println("La operacion realizada es la suma y el resultado es "+resultado1);
 				break;
 			case 2: 
 				double resultado2=(opr1-opr2);
-				System.out.println("La operaci�n realizada es la resta y el resultado es "+resultado2);
+				System.out.println("La operacion realizada es la resta y el resultado es "+resultado2);
 				break;
 			case 3: 
 				double resultado3=opr1*opr2;
-				System.out.println("La operaci�n realizada es la multiplicaci�n y el resultado es "+resultado3);
+				System.out.println("La operacion realizada es la multiplicacion y el resultado es "+resultado3);
 				break;
 			case 4: 
 				double resultado4=opr1/opr2;
-				System.out.println("La operaci�n realizada es la divisi�n y el resultado es "+resultado4);
+				System.out.println("La operacion realizada es la divisi�n y el resultado es "+resultado4);
 				break;
 			case 5: 
 				double resultado5=opr1%opr2;
-				System.out.println("La operaci�n realizada es el c�lculo del resto de una divisi�n y el resultado es "+resultado5);
+				System.out.println("La operacion realizada es el c�lculo del resto de una divisi�n y el resultado es "+resultado5);
 				break;
 			case 6: 
 				int resultado6=(int) (opr1/opr2); //Fuerza a redondear resultado a un entero positivo
-				System.out.println("La operaci�n realizada es la divisi�n entera y el resultado es "+resultado6);
+				System.out.println("La operacion realizada es la divisi�n entera y el resultado es "+resultado6);
 				break;
 		}
 	}

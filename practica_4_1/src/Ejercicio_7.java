@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Realizar un programa Java que permita cargar por teclado un vector numerico TB_NUM[100],
@@ -19,43 +20,16 @@ public class Ejercicio_7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
-		int[] TB_NUM=new int[100];
-		
-		for (int i=0;i<TB_NUM.length;i++) {
-			TB_NUM[i]=(int) (Math.random()*100+1);
-		}
-		
-		//double aux=0;
-		
-		Arrays.sort(TB_NUM);
-		
-		//imprime vector ordenado
-		for (int i=0;i<TB_NUM.length;i++) {
-			System.out.print(TB_NUM[i]+"    ");;
-		}
-		
-		System.out.println("Introduzca un valor");
-		
-		
-		for (int j=0;j<TB_NUM.length;j++) {
-			
-			for (int i=0;i<TB_NUM.length;i++) {
-				
-				if (j)
-			}
-		}
-		/*
-		
-		
-		
-		System.out.println("Introduzca un valor");
-		
-	
-		
-		System.out.println("Introduzca un valor");
-	}
+		  int vector[] = new int[100];
+	        for (int i =0; i<vector.length;i++)
+	            vector[i]=i+1;
 
-*/
+	        System.out.println("¿Qué posición deseas cambiar?");
+	        Scanner sc = new Scanner(System.in);
+	        int pos = sc.nextInt();
+	        System.out.println("¿Qué número deseas introducir?");
+	        vector[pos-1] = sc.nextInt();
+	        System.out.println(Arrays.toString(vector));
 
 	
 	}

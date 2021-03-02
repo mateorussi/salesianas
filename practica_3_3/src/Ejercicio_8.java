@@ -16,8 +16,6 @@ esto por cuestiones de log?stica y de seguridad.
 Realice un algoritmo para determinar el cobro por la entrega de un paquete o, en su caso, el
 rechazo de la entrega.
  */
-/
-package practica_3_3;
 
 import java.util.Scanner;
 
@@ -40,14 +38,14 @@ public class Ejercicio_8 {
 			   * algoritmo del cobro de la entrega o el rechazo	
 			   */
 		System.out.println("Ingrese el peso en gramos de su paquete"
-				+ "\nRercuerde que: 1 kg -> 1000 gramos");
+				+ "\nRecuerde que: 1 kg -> 1000 gramos");
 		peso=sc.nextFloat();
 	
 	if (peso<=5000) {
 		System.out.println("Ingrese la zona a la que va dirigido el paquete"
-				+ "\n1. Am�rica del Norte: 24.00"
-				+ "\n2. Am�rica Central: 20.00"
-				+ "\n3. Am�rica del Sur: 21.00"
+				+ "\n1. America del Norte: 24.00"
+				+ "\n2. America Central: 20.00"
+				+ "\n3. America del Sur: 21.00"
 				+ "\n4. Europa: 10.00"
 				+ "\n5. Asia: 18.00");
 		zona=sc.nextInt();

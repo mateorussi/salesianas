@@ -1,11 +1,10 @@
+import java.util.Scanner;
+
 /**
- * Escribe un programa que pida un número entero entre uno
+ * Escribe un programa que pida un nï¿½mero entero entre uno
  * y doce e imprima el numero de dias que tiene el mes 
  * correspondiente.
  */
-;
-
-import java.util.Scanner;
 
 /**
  * @author mateorussi
@@ -20,7 +19,7 @@ public class Ejercicio_7 {
 		// TODO Auto-generated method stub
 
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Ingrese un nï¿½mero entero entre 1 y 12");
+		System.out.println("Ingrese un numero entero entre 1 y 12");
 		int num=sc.nextInt();
 		
 		switch (num) {

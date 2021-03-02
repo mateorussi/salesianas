@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 /*
@@ -17,10 +20,22 @@ public class Ejercicio_9 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		System.out.println("Introduce un número entero");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int longitud = String.valueOf(num).length();
+        int vector[] = new int[longitud];
+        int mod = 10;
+        int cont = 0;
 
-		String numE = JOptionPane.showInputDialog("Introduzca un numero entero");
-		
-		
+        while (num % 10 != num) {
+            vector[cont] = num % 10;
+            num = (num - (num % 10)) / 10;
+            cont = cont + 1;
+        }
+        vector[cont] = num;
+        System.out.println(Arrays.toString(vector));	
 	}
 
 }

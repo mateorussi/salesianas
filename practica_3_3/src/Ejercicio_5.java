@@ -7,11 +7,8 @@
  * ma?ana, 15 %, y en turno de tarde, 10 %.
  * Realice un algoritmo para determinar cu?nto debe pagar por cada concepto una persona
  * que realiza una llamada, teniendo en cuenta la duraci?n de esta, el dia de la semana y el
- * turno. (Hora de la llamada hh:mm – Mañana antes de las 14:00, el resto tarde)
+ * turno. (Hora de la llamada hh:mm ï¿½ Maï¿½ana antes de las 14:00, el resto tarde)
  */
- tarde)
- */
-package practica_3_3;
 
 import java.util.Scanner;
 
@@ -65,7 +62,6 @@ public class Ejercicio_5 {
 			}
 		}
 		
-		System.out.println("La duraciÃ³n fuÃ© "+duracion+" minutos, el costo "+costo_total+" y el turno "+turno);
+		System.out.println("La duracion fue de "+duracion+" minutos, el costo de "+costo_total+" y el turno "+turno);
 	}
-
 }

@@ -1,9 +1,8 @@
 /**
- * Introducir un número por teclado y mostrar si el número
- * es primo o no. (*) Un número es primo si es divisible
- * sólo por 1 y por si mismo.
+ * Introducir un numero por teclado y mostrar si el numero
+ * es primo o no. (*) Un numero es primo si es divisible
+ * solo por 1 y por si mismo.
  */
-3_2;
 
 import java.util.Scanner;
 
@@ -19,19 +18,24 @@ public class Ejercicio_15 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("Introduzca un nÃºmero a evaluar");
+		System.out.println("Introduzca un numero");
 		
 		Scanner sc=new Scanner(System.in);
 		int num=sc.nextInt();
 		
-		
-		if (num%1==0) {
-			if (num%num==0){
-				System.out.println("Su nÃºmero es primo");
+		int cont = 0;
+		for (int i=1;i<=num;i++) {
+			if(num%i==0) {
+				cont++;
 			}
-		}else {
-			System.out.println("Su nÃºmero no es primo");
 		}
+		
+		if (cont!=2) {
+			System.out.println("El numero no es primo");
+		}else {
+			System.out.println("El numero es primo");
+		}
+		
 	}
 
 }

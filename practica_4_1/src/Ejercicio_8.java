@@ -1,7 +1,8 @@
-import javax.swing.JOptionPane;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
- * Realizar programa Java que permita cargar por teclado un vector num�rico
+ * Realizar programa Java que permita cargar por teclado un vector numerico
  * TB_NUM[100], posteriormente, introducir por teclado una posici�n,
  * elimine del vector num�rico el elemento que se encuentre en dicha posici�n
  * y visua1ice el vector sin ese elemento.
@@ -22,17 +23,16 @@ public class Ejercicio_8 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		double[] TB_NUM = new double[6];
-		
-		for (int i=0;i<TB_NUM.length;i++) {
-			String vector =JOptionPane.showInputDialog("Ingrese un valor numerico");
-		}
-		
-		String introPosicion = JOptionPane.showInputDialog("Introduzca una posicion");
-		
-		System.out.println(introPosicion);
-		
-		//segun la posicion donde este eliminar esa posicion y trasladar los posteriores a la izquierda.
+		int vector[] = new int[100];
+        for (int i =0; i<vector.length;i++)
+            vector[i]=i+1;
+
+        System.out.println("¿Qué posición deseas eliminar?");
+        Scanner sc = new Scanner(System.in);
+        int pos = sc.nextInt();
+
+        vector[pos-1]=0;
+        System.out.println(Arrays.toString(vector));
 		
 	}
 

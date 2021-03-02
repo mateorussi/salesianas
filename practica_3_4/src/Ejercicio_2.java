@@ -10,7 +10,6 @@
  * F?rmulas:
  * L = 2 . n . r A = 4. n .r2 V = - n . r 3
  */
-ractica_3_4;
 
 import java.util.Scanner;
 
@@ -26,35 +25,21 @@ public class Ejercicio_2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		double long_conf, area_circ, volumen_esf,radio;
+		double pi;
+		float radio;
+		char continuar;
+		pi = 3.141582;
+		Scanner dato = new Scanner(System.in);
 		
-		boolean rta=true;
-		
-		do {
-			//Pedir radio
-			System.out.println("Introduzca el radio de la circunferencia");
-			Scanner sc=new Scanner(System.in);
-			radio=sc.nextDouble();
-		
-			//Longitud de una circunferencia
-			float long_conf
-			//Area del circulo
-			
-			//Volumen de una esfera
-			
-			//
-			
-			System.out.println("¿Quieres continuar con otro caso (S/N)?");
-			String rta_user=sc.next();
-			if (rta_user=="S") {
-				rta=false;
+			do {
+				System.out.println("Introduce el radio de la circunferencia:");
+				radio= dato.nextFloat();
+				System.out.println("La longitud de la circunferencia es " + (2*pi*radio));
+				System.out.println("El área del círculo es " + Math.pow(radio,2)*pi);
+				System.out.println("¿Quiere continuar?(s/n)");
+				continuar = dato.next().charAt(0);
 			}
-		}while(rta=true);
-		
-		
-		
-		
-		
+			while (continuar=='s');
 	}
 
 }

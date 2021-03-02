@@ -1,9 +1,10 @@
+import java.util.Scanner;
+
 /**
- * Realizar un ejemplo de men˙, donde podemos escoger las
- * distintas opciones hasta que seleccionamos la opciÛn
- * de ìSalirî.
+ * Realizar un ejemplo de menu, donde podemos escoger las
+ * distintas opciones hasta que seleccionamos la opcion
+ * de Salir.
  */
-a_3_2;
 
 /**
  * @author mateorussi
@@ -17,15 +18,16 @@ public class Ejercicio_14 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-
+		Scanner sc=new Scanner(System.in);
+		int opc;
 		do {
 			System.out.println("Escoja una de las siguientes opciones del menu");
 			System.out.println("1. Primera opci√≥n" +
-					"/n2. Segunda opci√≥n" +
-					"/n3. Tercera opci√≥n" +
-					"/n4. Cuarta opci√≥n" +
-					"/n5. Elija para salir del programa ");
-			int opc= Integer.parseInt(System.console().readLine());
+					"\n2. Segunda opci√≥n" +
+					"\n3. Tercera opci√≥n" +
+					"\n4. Cuarta opci√≥n" +
+					"\n5. Elija para salir del programa ");
+			opc=sc.nextInt();
 
 			switch (opc){
 				case 1:
